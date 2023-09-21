@@ -1,5 +1,6 @@
-//TODO: update this once we have a better one
-export const safePonyRefLink: string = 'https://derpibooru.org/search?page=1&q=safe';
+// TODO: update this once we have a better one
+export const safePonyRefLink: string =
+  "https://derpibooru.org/search?page=1&q=safe";
 
 type Author = {
   name: string;
@@ -8,310 +9,307 @@ type Author = {
   youtube?: string;
   homepage?: string;
   icon?: string;
-}
+};
 
 interface AuthorMap {
-  [name: string]: Author
+  [name: string]: Author;
 }
 
 export const authors: AuthorMap = {
   dispatchrabbi: {
-    name: 'dispatchrabbi',
-    reddit: 'dispatchrabbi',
-    icon: '/authors/dispatchrabbi.png',
+    name: "dispatchrabbi",
+    reddit: "dispatchrabbi",
+    icon: "/authors/dispatchrabbi.png",
   },
   idrawponiessometimes: {
-    name: 'IDrawPoniesSometimes',
-    reddit: 'IDrawPoniesSometimes',
+    name: "IDrawPoniesSometimes",
+    reddit: "IDrawPoniesSometimes",
   },
   mynameischumpy: {
-    name: 'mynameischumpy',
-    reddit: 'mynameischumpy',
+    name: "mynameischumpy",
+    reddit: "mynameischumpy",
   },
   pixienop: {
-    name: 'pixienop',
-    twitter: 'pixienop',
-    youtube: 'https://www.youtube.com/channel/UC0WlyM5MFTVDOZqNRxhixnQ',
-    homepage: 'https://pixienop.net/',
-    icon: '/authors/pixienop.png',
+    name: "pixienop",
+    twitter: "pixienop",
+    youtube: "https://www.youtube.com/channel/UC0WlyM5MFTVDOZqNRxhixnQ",
+    homepage: "https://pixienop.net/",
+    icon: "/authors/pixienop.png",
   },
   viwrastupr: {
-    name: 'viwrastupr',
-    reddit: 'viwrastupr',
-    icon: '/authors/viwrastupr.jpg',
+    name: "viwrastupr",
+    reddit: "viwrastupr",
+    icon: "/authors/viwrastupr.jpg",
   },
-}
+};
 
 type Guide = {
   name: string;
   author: string;
   link?: string;
   tags?: Array<string>;
-}
+};
 
 interface GuideMap {
-  [name: string]: Guide
+  [name: string]: Guide;
 }
 
 export const guides: GuideMap = {
-  'applying-value-to-shading': {
-    name: 'Applying value to shading',
-    author: 'thebestwes',
+  "applying-value-to-shading": {
+    name: "Applying value to shading",
+    author: "thebestwes",
   },
-  'art-isnt-made-in-a-vacuum': {
-    name: 'A look at exploring new things and how to prevent art stagnation',
-    author: 'viwrastupr',
+  "art-isnt-made-in-a-vacuum": {
+    name: "A look at exploring new things and how to prevent art stagnation",
+    author: "viwrastupr",
   },
-  'backgrounds': {
-    name: 'Thinking about and working on backgrounds',
-    author: 'moarvespenegas',
+  backgrounds: {
+    name: "Thinking about and working on backgrounds",
+    author: "moarvespenegas",
   },
-  'big-projects': {
-    name: 'The BIG PROJECT guide',
-    author: 'viwrastupr',
+  "big-projects": {
+    name: "The BIG PROJECT guide",
+    author: "viwrastupr",
   },
-  'bodies': {
-    name: 'Body guide',
-    author: 'sorcerushorserus',
+  bodies: {
+    name: "Body guide",
+    author: "sorcerushorserus",
   },
-  'chumpy/': {
-    name: 'Working on your line work – from under sketch to complete',
-    author: 'mynameischumpy',
+  "chumpy/": {
+    name: "Working on your line work – from under sketch to complete",
+    author: "mynameischumpy",
   },
-  'chumpy/1-sketching': {
-    name: 'Lesson 1: Sketching Technique',
-    author: 'mynameischumpy',
+  "chumpy/1-sketching": {
+    name: "Lesson 1: Sketching Technique",
+    author: "mynameischumpy",
   },
-  'chumpy/2-linework': {
-    name: 'Lesson 2: Linework (deleted)',
-    author: 'mynameischumpy',
+  "chumpy/2-linework": {
+    name: "Lesson 2: Linework (deleted)",
+    author: "mynameischumpy",
   },
-  'chumpy/3-greyscale-shading': {
-    name: 'Lesson 3: Greyscale Shading',
-    author: 'mynameischumpy',
+  "chumpy/3-greyscale-shading": {
+    name: "Lesson 3: Greyscale Shading",
+    author: "mynameischumpy",
   },
-  'chumpy/4-pony-shading-and-lighting': {
-    name: 'Lesson 4: Basic Pony Shading and Lighting',
-    author: 'mynameischumpy',
+  "chumpy/4-pony-shading-and-lighting": {
+    name: "Lesson 4: Basic Pony Shading and Lighting",
+    author: "mynameischumpy",
   },
-  'chumpy/5-common-anatomy-errors': {
-    name: 'Lesson 5: Common anatomy errors',
-    author: 'mynameischumpy',
+  "chumpy/5-common-anatomy-errors": {
+    name: "Lesson 5: Common anatomy errors",
+    author: "mynameischumpy",
   },
-  'composition': {
-    name: 'Composition. How does your drawing feel to look at, and why?',
-    author: 'viwrastupr',
+  composition: {
+    name: "Composition. How does your drawing feel to look at, and why?",
+    author: "viwrastupr",
   },
-  'critical-thinking': {
-    name: 'Critical thinking: The most important skill to have',
-    author: 'viwrastupr',
+  "critical-thinking": {
+    name: "Critical thinking: The most important skill to have",
+    author: "viwrastupr",
   },
-  'critique-lessons': {
-    name: 'Critique lessons – A 101 approach to starting with critique',
-    author: 'r1pperanthon',
+  "critique-lessons": {
+    name: "Critique lessons – A 101 approach to starting with critique",
+    author: "r1pperanthon",
   },
-  'dont-panic': {
+  "dont-panic": {
     name: "DON'T PANIC! A drawing guide – from beginner to expert, and everything inbetween",
-    author: 'viwrastupr',
+    author: "viwrastupr",
   },
-  'gesturing': {
-    name: 'Gesturing, what is it and why do I need it?',
-    author: 'viwrastupr',
+  gesturing: {
+    name: "Gesturing, what is it and why do I need it?",
+    author: "viwrastupr",
   },
-  'giving-critique-without-frustration': {
-    name: 'Giving wonderful critique without that feeling of boredom and frustration',
-    author: 'viwrastupr',
+  "giving-critique-without-frustration": {
+    name: "Giving wonderful critique without that feeling of boredom and frustration",
+    author: "viwrastupr",
   },
-  'hair': {
-    name: 'Thinking about Hair',
-    author: 'viwrastupr',
+  hair: {
+    name: "Thinking about Hair",
+    author: "viwrastupr",
   },
-  'heads': {
-    name: 'Heads',
-    author: 'whatsapokemon',
+  heads: {
+    name: "Heads",
+    author: "whatsapokemon",
   },
-  'how-to-critique': {
-    name: 'How to Critique: For critics and artists alike',
-    author: 'viwrastupr',
+  "how-to-critique": {
+    name: "How to Critique: For critics and artists alike",
+    author: "viwrastupr",
   },
-  'hue-shifting': {
-    name: 'Hue Shifting: Making natural tones in lights and shadows',
-    author: 'pixienop',
+  "hue-shifting": {
+    name: "Hue Shifting: Making natural tones in lights and shadows",
+    author: "pixienop",
   },
-  'identifying-compositional-awkwardness': {
-    name: 'Identifying Compositional Awkwardness',
-    author: 'viwrastupr',
+  "identifying-compositional-awkwardness": {
+    name: "Identifying Compositional Awkwardness",
+    author: "viwrastupr",
   },
-  'intention-in-art': {
-    name: 'Intention in art. What you want to do vs What actually happens',
-    author: 'viwrastupr',
+  "intention-in-art": {
+    name: "Intention in art. What you want to do vs What actually happens",
+    author: "viwrastupr",
   },
-  'keys-to-success-in-art': {
-    name: 'Keys to Success in Art',
-    author: 'viwrastupr',
+  "keys-to-success-in-art": {
+    name: "Keys to Success in Art",
+    author: "viwrastupr",
   },
-  'legs': {
-    name: 'Legs',
-    author: 'whatsapokemon',
+  legs: {
+    name: "Legs",
+    author: "whatsapokemon",
   },
-  'measuring-and-comparing': {
-    name: 'Measuring and Comparing',
-    author: 'viwrastupr',
+  "measuring-and-comparing": {
+    name: "Measuring and Comparing",
+    author: "viwrastupr",
   },
-  'measuring-and-maintaining-proportions': {
-    name: 'How to measure, compare, and sketch your way to proportionality',
-    author: 'dispatchrabbi',
+  "measuring-and-maintaining-proportions": {
+    name: "How to measure, compare, and sketch your way to proportionality",
+    author: "dispatchrabbi",
   },
-  'opponent-process-color': {
-    name: 'The Opponent Process (neurological) theory of color',
-    author: 'ponytron5000',
+  "opponent-process-color": {
+    name: "The Opponent Process (neurological) theory of color",
+    author: "ponytron5000",
   },
-  'pony-anatomy': {
-    name: 'Pony Anatomy',
-    author: 'applejacksmack',
+  "pony-anatomy": {
+    name: "Pony Anatomy",
+    author: "applejacksmack",
   },
-  'pony-anatomy-and-undersketching': {
-    name: 'Pony anatomy and undersketching',
-    author: 'viwrastupr',
+  "pony-anatomy-and-undersketching": {
+    name: "Pony anatomy and undersketching",
+    author: "viwrastupr",
   },
-  'pose-building-in-action': {
-    name: 'Undersketching and Refinement - Pose-building in action',
-    author: 'idrawponiessometimes',
+  "pose-building-in-action": {
+    name: "Undersketching and Refinement - Pose-building in action",
+    author: "idrawponiessometimes",
   },
-  'rules-and-exceptions': {
-    name: 'Rules and Exceptions',
-    author: 'viwrastupr',
+  "rules-and-exceptions": {
+    name: "Rules and Exceptions",
+    author: "viwrastupr",
   },
-  'self-expression-and-creativity': {
-    name: 'Self-expression and creativity – a guide to find art in yourself',
-    author: 'popprocks',
+  "self-expression-and-creativity": {
+    name: "Self-expression and creativity – a guide to find art in yourself",
+    author: "popprocks",
   },
-  'shading': {
-    name: 'Shading',
-    author: 'viwrastupr',
+  shading: {
+    name: "Shading",
+    author: "viwrastupr",
   },
-  'shadows-making-objects-appear-3d': {
-    name: 'Shadows and making objects appear 3d',
-    author: 'viwrastupr',
+  "shadows-making-objects-appear-3d": {
+    name: "Shadows and making objects appear 3d",
+    author: "viwrastupr",
   },
-  'sub-etiquette': {
-    name: 'Sub etiquette',
-    author: 'viwrastupr',
+  "sub-etiquette": {
+    name: "Sub etiquette",
+    author: "viwrastupr",
   },
-  'twilights-creative-checklist': {
+  "twilights-creative-checklist": {
     name: "Twilight's Creative Checklist: How to be creative",
-    author: 'viwrastupr',
+    author: "viwrastupr",
   },
-  'understanding-references': {
-    name: 'Understanding References',
-    author: 'viwrastupr',
+  "understanding-references": {
+    name: "Understanding References",
+    author: "viwrastupr",
   },
-  'variety-in-art': {
-    name: 'Defining Variety in Art',
-    author: 'viwrastupr',
+  "variety-in-art": {
+    name: "Defining Variety in Art",
+    author: "viwrastupr",
   },
-  'what-is-critique': {
-    name: 'What is critique? Problems and solutions for artists and critics',
-    author: 'viwrastupr',
+  "what-is-critique": {
+    name: "What is critique? Problems and solutions for artists and critics",
+    author: "viwrastupr",
   },
-  'where-to-shade': {
-    name: 'Where to shade? Breaking things into parts before shading',
-    author: 'viwrastupr',
+  "where-to-shade": {
+    name: "Where to shade? Breaking things into parts before shading",
+    author: "viwrastupr",
   },
-}
+};
 
 export const guideLists = {
-  'default': {
-    name: 'Beginner Guides',
-    home: '',
+  default: {
+    name: "Beginner Guides",
+    home: "",
     pages: [
       {
-        name: 'Introductions',
+        name: "Introductions",
         pages: [
-          'sub-etiquette',
-          'measuring-and-maintaining-proportions',
-          'keys-to-success-in-art',
-          'dont-panic',
+          "sub-etiquette",
+          "measuring-and-maintaining-proportions",
+          "keys-to-success-in-art",
+          "dont-panic",
         ],
       },
       {
-        name: 'The Basics',
+        name: "The Basics",
         pages: [
-          'pony-anatomy-and-undersketching',
-          'understanding-references',
-          'measuring-and-comparing',
-          'pose-building-in-action',
-          'chumpy/',
-          'gesturing',
-          'hair',
-          'pony-anatomy',
-          'bodies',
+          "pony-anatomy-and-undersketching",
+          "understanding-references",
+          "measuring-and-comparing",
+          "pose-building-in-action",
+          "chumpy/",
+          "gesturing",
+          "hair",
+          "pony-anatomy",
+          "bodies",
         ],
       },
       {
-        name: 'Individual Parts',
+        name: "Individual Parts",
+        pages: ["legs", "heads"],
+      },
+      {
+        name: "Shading",
         pages: [
-          'legs',
-          'heads',
+          "where-to-shade",
+          "shading",
+          "shadows-making-objects-appear-3d",
+          "applying-value-to-shading",
+          "hue-shifting",
         ],
       },
       {
-        name: 'Shading',
+        name: "Complex Guides",
         pages: [
-          'where-to-shade',
-          'shading',
-          'shadows-making-objects-appear-3d',
-          'applying-value-to-shading',
-          'hue-shifting',
+          "composition",
+          "backgrounds",
+          "identifying-compositional-awkwardness",
+          "rules-and-exceptions",
+          "big-projects",
+          "critical-thinking",
+          "opponent-process-color",
         ],
       },
       {
-        name: 'Complex Guides',
+        name: "Creative Guides",
         pages: [
-          'composition',
-          'backgrounds',
-          'identifying-compositional-awkwardness',
-          'rules-and-exceptions',
-          'big-projects',
-          'critical-thinking',
-          'opponent-process-color',
+          "variety-in-art",
+          "art-isnt-made-in-a-vacuum",
+          "intention-in-art",
+          "twilights-creative-checklist",
+          "self-expression-and-creativity",
         ],
       },
       {
-        name: 'Creative Guides',
+        name: "Critique Guides",
         pages: [
-          'variety-in-art',
-          'art-isnt-made-in-a-vacuum',
-          'intention-in-art',
-          'twilights-creative-checklist',
-          'self-expression-and-creativity',
-        ],
-      },
-      {
-        name: 'Critique Guides',
-        pages: [
-          'what-is-critique',
-          'how-to-critique',
-          'giving-critique-without-frustration',
-          'critique-lessons',
+          "what-is-critique",
+          "how-to-critique",
+          "giving-critique-without-frustration",
+          "critique-lessons",
         ],
       },
     ],
   },
-  'chumpys': {
+  chumpys: {
     name: "Chumpy's Guides",
-    home: 'chumpy/',
+    home: "chumpy/",
     pages: [
       {
         name: "The Guides",
         pages: [
-          'chumpy/1-sketching',
-          'chumpy/2-linework',
-          'chumpy/3-greyscale-shading',
-          'chumpy/4-pony-shading-and-lighting',
-          'chumpy/5-common-anatomy-errors',
+          "chumpy/1-sketching",
+          "chumpy/2-linework",
+          "chumpy/3-greyscale-shading",
+          "chumpy/4-pony-shading-and-lighting",
+          "chumpy/5-common-anatomy-errors",
         ],
       },
     ],
   },
-}
+};

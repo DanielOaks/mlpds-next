@@ -1,27 +1,53 @@
 <template>
-  <nav class="bg-primary-500 dark:bg-primary-600 sticky w-full z-20 top-0 left-0">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <nav
+    class="sticky left-0 top-0 z-20 w-full bg-primary-500 dark:bg-primary-600"
+  >
+    <div
+      class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+    >
       <a href="/" class="flex items-center">
-          <img src="/logo.png" class="h-8 mr-3" alt="MLP Drawing School logo">
-          <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">MLPDS</span>
+        <img src="/logo.png" class="mr-3 h-8" alt="MLP Drawing School logo" />
+        <span
+          class="self-center whitespace-nowrap text-2xl font-semibold text-white"
+          >MLPDS</span
+        >
       </a>
-      <div class="items-center justify-between hidden w-full md:flex md:w-auto" id="navbar-sticky">
-        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+      <div
+        id="navbar-sticky"
+        class="hidden w-full items-center justify-between md:flex md:w-auto"
+      >
+        <ul
+          class="mt-4 flex flex-col rounded-lg border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0"
+        >
           <li>
-            <a href="/guides/" class="block py-2 pl-3 pr-4 text-primary-100 rounded md:bg-transparent md:p-0" aria-current="page">Guides</a>
+            <a
+              href="/guides/"
+              class="block rounded py-2 pl-3 pr-4 text-primary-100 md:bg-transparent md:p-0"
+              aria-current="page"
+              >Guides</a
+            >
           </li>
           <li>
-            <a href="https://www.reddit.com/r/MLPdrawingschool/wiki/biweekly" target="_blank" class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0">Challenges</a>
+            <a
+              href="https://www.reddit.com/r/MLPdrawingschool/wiki/biweekly"
+              target="_blank"
+              class="block rounded py-2 pl-3 pr-4 text-white md:bg-transparent md:p-0"
+              >Challenges</a
+            >
           </li>
           <li>
-            <a href="/prompts" class="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0">Prompt Generator</a>
+            <a
+              href="/prompts"
+              class="block rounded py-2 pl-3 pr-4 text-white md:bg-transparent md:p-0"
+              >Prompt Generator</a
+            >
           </li>
         </ul>
       </div>
       <div class="flex">
         <select
           v-model="colorMode.preference"
-          class="pt-1 pb-2 px-2 rounded-xl dark:bg-gray-900 dark:text-white dark:border-gray-700"
+          class="rounded-xl px-2 pb-2 pt-1 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
         >
           <option value="system">System</option>
           <option value="light">Light Mode</option>
@@ -33,5 +59,5 @@
 </template>
 
 <script setup lang="ts">
-const colorMode = useColorMode()
+const colorMode = useColorMode();
 </script>

@@ -1,8 +1,9 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const colors = require("tailwindcss/colors");
 
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -26,7 +27,7 @@ module.exports = {
           700: "#80234D",
           800: "#581326",
           900: "#31070C",
-          950: "#170302"
+          950: "#170302",
         },
         secondary: {
           50: "#FFFCF0",
@@ -39,11 +40,10 @@ module.exports = {
           700: "#9E8900",
           800: "#6B5F00",
           900: "#332E00",
-          950: "#191700"
+          950: "#191700",
         },
       },
     },
   },
   plugins: [],
-}
-
+};

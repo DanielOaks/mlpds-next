@@ -2,6 +2,7 @@
 title: Welcome
 layout: default
 ---
+
 <div class="mb-10">
   <img class="w-40 max-w-full mx-auto my-6" src="/logo.png"/>
   <hgroup class="text-center">
