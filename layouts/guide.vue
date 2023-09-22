@@ -179,7 +179,7 @@ a.guide-top-link {
     @apply mt-3;
   }
   a {
-    @apply text-blue-600 underline dark:text-blue-400;
+    @apply text-link-light dark:text-link-dark underline;
   }
 }
 </style>

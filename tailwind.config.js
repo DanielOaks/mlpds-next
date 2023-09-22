@@ -17,6 +17,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "link-light": "rgb(37 99 235)",
+        "link-dark": "rgb(96 165 250)",
         zinc: colors.zinc,
         primary: {
           50: "#FDE9E8",

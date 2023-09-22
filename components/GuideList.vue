@@ -9,7 +9,7 @@
       />
       <div v-for="(p, j) in section.pages" :key="j" class="guideLink mb-1">
         <NuxtLink
-          class="mr-2 text-blue-700 underline"
+          class="text-link-light dark:text-link-dark mr-2 underline"
           :to="g(p).link || '/guides/' + p"
         >
           {{ g(p).name }}

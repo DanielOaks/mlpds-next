@@ -9,7 +9,7 @@
         v-for="(image, i) in finelineImages"
         :key="i"
         :href="image.img"
-        class="block rounded-2xl border-2 border-solid border-secondary-400 px-1 py-2 shadow-lg"
+        class="block rounded-2xl border-2 border-solid border-secondary-400 px-1 py-2 shadow-lg dark:border-secondary-700"
       >
         <div
           class="flex h-80 w-80 items-center justify-center overflow-hidden rounded bg-white"
