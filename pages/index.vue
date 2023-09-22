@@ -26,7 +26,7 @@
           >Youtube</a
         >
       </div>
-      <fineline-galley />
+      <FinelineGallery />
     </div>
   </nuxt-layout>
 </template>

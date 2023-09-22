@@ -5,13 +5,13 @@
     <div
       class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
     >
-      <a href="/" class="flex items-center">
+      <nuxt-link to="/" class="flex items-center">
         <img src="/logo.png" class="mr-3 h-8" alt="MLP Drawing School logo" />
         <span
           class="self-center whitespace-nowrap text-2xl font-semibold text-white"
           >MLPDS</span
         >
-      </a>
+      </nuxt-link>
       <div
         id="navbar-sticky"
         class="hidden w-full items-center justify-between md:flex md:w-auto"
@@ -20,27 +20,20 @@
           class="mt-4 flex flex-col rounded-lg border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0"
         >
           <li>
-            <a
-              href="/guides/"
-              class="block rounded py-2 pl-3 pr-4 text-primary-100 md:bg-transparent md:p-0"
-              aria-current="page"
-              >Guides</a
+            <nuxt-link to="/guides/" class="header-link" aria-current="page"
+              >Guides</nuxt-link
             >
           </li>
           <li>
             <a
               href="https://www.reddit.com/r/MLPdrawingschool/wiki/biweekly"
               target="_blank"
-              class="block rounded py-2 pl-3 pr-4 text-white md:bg-transparent md:p-0"
+              class="header-link"
               >Challenges</a
             >
           </li>
           <li>
-            <a
-              href="/prompts"
-              class="block rounded py-2 pl-3 pr-4 text-white md:bg-transparent md:p-0"
-              >Prompt Generator</a
-            >
+            <a href="/prompts" class="header-link">Prompt Generator</a>
           </li>
         </ul>
       </div>
@@ -61,3 +54,13 @@
 <script setup lang="ts">
 const colorMode = useColorMode();
 </script>
+
+<style>
+.header-link {
+  @apply block rounded py-2 pl-3 pr-4 text-white transition-all md:bg-transparent md:p-0;
+  &:hover,
+  &.router-link-exact-active {
+    @apply text-primary-100;
+  }
+}
+</style>

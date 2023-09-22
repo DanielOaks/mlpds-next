@@ -1,6 +1,6 @@
 <template>
   <nuxt-layout>
-    <div class="bg-secondary-100 dark:bg-secondary-300 flex w-full">
+    <div class="flex w-full bg-secondary-100 dark:bg-secondary-300">
       <img class="mx-auto max-h-60" src="/banner-1.jpg" />
       <h1
         class="absolute left-1/2 top-40 -translate-x-1/2 text-5xl font-bold text-white"

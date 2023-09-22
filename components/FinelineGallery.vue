@@ -1,0 +1,37 @@
+<template>
+  <div class="mx-auto mt-10 flex max-w-screen-md flex-col items-center">
+    <h2 class="text-2xl font-bold">Fineline</h2>
+    <span class="text-lg">
+      Fineline is our community's mascot. Look at her go!
+    </span>
+    <div class="mt-4 flex gap-4">
+      <a
+        v-for="(image, i) in finelineImages"
+        :key="i"
+        :href="image.img"
+        class="block rounded-2xl border-2 border-solid border-secondary-400 px-1 py-2 shadow-lg"
+      >
+        <div
+          class="flex h-80 w-80 items-center justify-center overflow-hidden rounded bg-white"
+        >
+          <img class="max-h-full max-w-full" :src="image.img" />
+        </div>
+        <div class="block pt-2 text-center">@{{ image.twitter }}</div>
+      </a>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+const finelineImages = [
+  {
+    img: "/fineline/fluffyxai-fineline-1.png",
+    twitter: "FluffyXai",
+  },
+  {
+    img: "/fineline/vex-fineline-1.jpg",
+    twitter: "terminal_vex",
+  },
+];
+console.log(finelineImages);
+</script>
