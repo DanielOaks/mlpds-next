@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-// // eslint-disable-next-line @typescript-eslint/no-var-requires
-// const defaultTheme = require("tailwindcss/defaultTheme");
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const defaultTheme = require("tailwindcss/defaultTheme");
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const colors = require("tailwindcss/colors");
 
@@ -45,9 +45,9 @@ module.exports = {
           950: "#191700",
         },
       },
-      // fontFamily: {
-      //   sans: ["Poppins", ...defaultTheme.fontFamily.sans],
-      // },
+      fontFamily: {
+        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+      },
     },
   },
   plugins: [],

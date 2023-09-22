@@ -13,7 +13,12 @@ As people often hear from me critique is a conversation so I am going to approac
 
 ### For the Critiquer: Not enough time!
 
-You have a life and the sub isn't all of it. This is why I'm trying to create all the guides. So that the same problem that comes up in artist after artist can be more easily addressed with a simple link instead of a redundant long and hard to make comment. <AppPonymote mote="ajhappy" text="and we need more critics in general."/> I encourage everyone to write their own and suggest improvements on and points that need expansion to the guides. We're trying to build a nice self sustaining school and for that we definitely need to ease the burden on critics. A guide gives you quotes to pull from, links to make and the beginning of the conversation. You can always tailor your critique to suit the artist, but a guide makes a good undersketch.
+You have a life and the sub isn't all of it. This is why I'm trying to create all the guides. So that the same problem that comes up in artist after artist can be more easily addressed with a simple link instead of a redundant long and hard to make comment.
+::app-ponymote{mote="ajhappy"}
+and we need more critics in general
+::
+
+I encourage everyone to write their own and suggest improvements on and points that need expansion to the guides. We're trying to build a nice self sustaining school and for that we definitely need to ease the burden on critics. A guide gives you quotes to pull from, links to make and the beginning of the conversation. You can always tailor your critique to suit the artist, but a guide makes a good undersketch.
 
 ### For the Artist: No one is critiquing my work!
 
@@ -25,11 +30,15 @@ However it goes a bit deeper for the artist. It is your responsibility to come t
 
 ### For the Critiquer: Another new person needs to learn the culture of the MLPDS...
 
-This is supposed to happen. New people aren't magic. <AppPonymote mote="twismile" text="We need more magic in the sub."/> Now we have a <router-link to="/guides/sub-etiquette">brand new guide here to introduce new peoples to the sub</router-link>.
+This is supposed to happen. New people aren't magic.
+::app-ponymote{mote="twismile"}
+We need more magic in the sub.
+::
+Now we have a [brand new guide here to introduce new peoples to the sub](/guides/sub-etiquette).
 
 ### For the Artist: I'm brand new, what's going on?
 
-To help you on your way we've got a large number of guides here, start at the guide above, move on to <router-link to="/guides/dont-panic">DON'T PANIC</router-link> and go from there. Explore the guides and ask any questions that come to mind.
+To help you on your way we've got a large number of guides here, start at the guide above, move on to [DON'T PANIC](/guides/dont-panic) and go from there. Explore the guides and ask any questions that come to mind.
 
 ## Problem 3. Giving and Receiving Advice
 
@@ -49,7 +58,7 @@ There are attention seekers, yes, but give your artists the benefit of the doubt
 
 ### For the Artist: Critics aren't commenting on the posts
 
-This can be an issue of timing. If there have been a large number of posts at once (particularly if they're all yours) it can be tiring to critics. Also, give back to the community and they shall give to you. Critique! How? Well we have a <router-link to="/guides/how-to-critique">how to critique guide</router-link> as well.
+This can be an issue of timing. If there have been a large number of posts at once (particularly if they're all yours) it can be tiring to critics. Also, give back to the community and they shall give to you. Critique! How? Well we have a [how to critique guide](/guides/how-to-critique) as well.
 
 ## Problem 5. Defeated artists
 
@@ -74,5 +83,9 @@ Art doesn't end. There is always more to learn and always a way to improve. Try 
 ## Conclusion
 
 If you have more problems let me know and I'll be sure and update the guide!
-<AppPonymote mote="twiquery" text="This didn't really turn out how I intended it... darn."/>
-<AppPonymote mote="twistare" text="Now I have another critique guide to make."/>
+::app-ponymote{mote="twiquery"}
+This didn't really turn out how I intended it... darn.
+::
+::app-ponymote{mote="twistare"}
+Now I have another critique guide to make.
+::

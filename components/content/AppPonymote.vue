@@ -1,14 +1,16 @@
 <template>
-  <div :class="{ ponymote: true, floating: !text, right: right }">
+  <div :class="{ ponymote: true, floating: false, right: right }">
     <img :src="'/ponymotes/' + fix(mote) + '.png'" />
-    <span v-if="text" v-text="text" />
+    <span>
+      <ContentSlot :use="$slots.default" unwrap="p" />
+    </span>
   </div>
 </template>
 
 <script setup lang="ts">
 defineProps({
   mote: String,
-  text: String,
+  floating: Boolean,
   right: Boolean,
 });
 
@@ -44,13 +46,13 @@ function fix(mote?: string) {
 </script>
 
 <style>
-/* p + .ponymote {
+p + .ponymote {
   margin-top: 1em;
 }
 .ponymote {
   display: flex;
   align-items: center;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
   &.floating {
     display: block;
     float: left;
@@ -65,11 +67,11 @@ function fix(mote?: string) {
   }
   span {
     display: block;
-    margin-left: .7em;
-    opacity: .66;
+    margin-left: 0.7em;
+    opacity: 0.66;
   }
   + .ponymote {
-    margin-top: .6em;
+    margin-top: 0.6em;
   }
-} */
+}
 </style>

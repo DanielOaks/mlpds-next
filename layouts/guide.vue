@@ -30,33 +30,58 @@
       <TheHeader />
       <div class="mx-auto mt-5 max-w-screen-md">
         <hgroup>
-          <h1 class="mb-3 mt-8 text-3xl font-semibold" v-text="title" />
+          <div class="mt-8 flex content-center items-center">
+            <h1 class="text-3xl font-bold" v-text="title" />
 
-          <div v-if="author === undefined" class="author">
-            <span class="name" v-text="authorKey" />
+            <div v-if="author === undefined" class="ml-4 inline-block">
+              <span class="author-name" v-text="authorKey" />
+            </div>
+            <div v-if="author !== undefined" class="ml-4 flex items-center">
+              <img
+                v-if="author.icon"
+                class="h-14 rounded-full"
+                :src="author.icon"
+              />
+              <span class="author-name" v-text="author.name" />
+              <a
+                v-if="author.youtube"
+                class="author-link"
+                :href="author.youtube"
+                ><span color="#FF0000">YouTube</span></a
+              >
+              <a
+                v-if="author.twitter"
+                class="author-link"
+                :href="`https://twitter.com/${author.twitter}`"
+                ><span color="#1DA1F2">Twitter</span></a
+              >
+              <a
+                v-if="author.reddit"
+                class="author-link"
+                :href="`https://reddit.com/u/${author.reddit}`"
+                ><span color="#FF5700">Reddit</span></a
+              >
+              <a
+                v-if="author.homepage"
+                class="author-link"
+                :href="author.homepage"
+                ><span color="indigo">Link</span></a
+              >
+            </div>
           </div>
-          <div v-if="author !== undefined" class="author">
-            <img v-if="author.icon" class="avatar" :src="author.icon" />
-            <span class="name" v-text="author.name" />
-            <a v-if="author.youtube" :href="author.youtube"
-              ><span color="#FF0000">mdi-youtube</span></a
-            >
-            <a
-              v-if="author.twitter"
-              :href="`https://twitter.com/${author.twitter}`"
-              ><span color="#1DA1F2">mdi-twitter</span></a
-            >
-            <a
-              v-if="author.reddit"
-              :href="`https://reddit.com/u/${author.reddit}`"
-              ><span color="#FF5700">mdi-reddit</span></a
-            >
-            <a v-if="author.homepage" :href="author.homepage"
-              ><span color="indigo">mdi-link-variant</span></a
-            >
-          </div>
-          <div v-if="subtitle" class="italic" v-text="subtitle" />
+          <div v-if="subtitle" class="text-xl opacity-70" v-text="subtitle" />
         </hgroup>
+        <div v-if="prevPage || home || nextPage" class="homeLinks">
+          <nuxt-link v-if="prevPage" :to="guidesPrefix + prevPage"
+            >Prev</nuxt-link
+          >
+          <span v-if="!prevPage">Prev</span>
+          <nuxt-link :to="guidesPrefix + home">Home</nuxt-link>
+          <nuxt-link v-if="nextPage" :to="guidesPrefix + nextPage"
+            >Next</nuxt-link
+          >
+          <span v-if="!nextPage">Next</span>
+        </div>
         <div class="guide-content">
           <slot />
         </div>
@@ -66,6 +91,8 @@
 </template>
 
 <script setup lang="ts">
+import "@fontsource/roboto";
+import "@fontsource/roboto/700.css";
 import { authors } from "@/guideData";
 
 useHead({
@@ -80,12 +107,61 @@ const { page } = useContent();
 
 const { title, author: authorKey, subtitle } = page.value;
 const author = authors[authorKey];
+
+// get this guide's path
+const guidesPrefix = "/guides/";
+const home = "";
+const prevPage = "";
+const nextPage = "";
+// const guidePath = route.path.replace(/^(\/guides\/)/, "");
+
+// const list = props.frontmatter.list || "default";
+
+// if (guideLists[list]) {
+//   home = guideLists[list].home;
+//   let found = false;
+//   for (const section of guideLists[list].pages) {
+//     for (const page of section.pages) {
+//       if (found && nextPage == "") {
+//         nextPage = page;
+//       }
+//       if (!found && page !== guidePath) {
+//         prevPage = page;
+//       }
+//       if (page === guidePath) {
+//         found = true;
+//       }
+//     }
+//   }
+// }
 </script>
 
 <style>
+.author-name {
+  @apply relative top-1.5 mx-2 text-2xl opacity-50;
+}
+.author-link {
+  @apply relative top-2.5 mx-2;
+}
 .guide-content {
+  font-size: 1.05em;
+  @apply mb-12;
+
+  h2 a,
+  h3 a {
+    @apply text-current no-underline;
+  }
+  h2 {
+    @apply mb-3 mt-10 text-2xl font-bold;
+  }
+  h3 {
+    @apply mb-1 mt-5 text-xl font-bold;
+  }
   p + p {
-    margin-top: 1em;
+    @apply mt-3;
+  }
+  a {
+    @apply text-blue-500 underline;
   }
 }
 </style>
