@@ -71,16 +71,27 @@
           </div>
           <div v-if="subtitle" class="text-xl opacity-70" v-text="subtitle" />
         </hgroup>
-        <div v-if="prevPage || home || nextPage" class="homeLinks">
-          <nuxt-link v-if="prevPage" :to="guidesPrefix + prevPage"
-            >Prev</nuxt-link
+        <div
+          v-if="prevPage || home || nextPage"
+          class="sticky top-16 mb-4 mt-1 flex justify-center gap-3 border-b-2 border-primary-100 bg-white dark:border-primary-800 dark:bg-zinc-900"
+        >
+          <nuxt-link
+            v-if="prevPage"
+            class="guide-top-link"
+            :to="guidesPrefix + prevPage"
+            >Previous Guide</nuxt-link
           >
-          <span v-if="!prevPage">Prev</span>
-          <nuxt-link :to="guidesPrefix + home">Home</nuxt-link>
-          <nuxt-link v-if="nextPage" :to="guidesPrefix + nextPage"
-            >Next</nuxt-link
+          <span v-if="!prevPage" class="guide-top-link">Previous Guide</span>
+          <nuxt-link class="guide-top-link" :to="guidesPrefix + home"
+            >Home</nuxt-link
           >
-          <span v-if="!nextPage">Next</span>
+          <nuxt-link
+            v-if="nextPage"
+            class="guide-top-link"
+            :to="guidesPrefix + nextPage"
+            >Next Guide</nuxt-link
+          >
+          <span v-if="!nextPage" class="guide-top-link">Next Guide</span>
         </div>
         <div class="guide-content">
           <slot />
@@ -93,7 +104,7 @@
 <script setup lang="ts">
 import "@fontsource/roboto";
 import "@fontsource/roboto/700.css";
-import { authors } from "@/guideData";
+import { authors, guideLists } from "@/guideData";
 
 useHead({
   titleTemplate: (titleChunk) => {
@@ -110,30 +121,31 @@ const author = authors[authorKey];
 
 // get this guide's path
 const guidesPrefix = "/guides/";
-const home = "";
-const prevPage = "";
-const nextPage = "";
-// const guidePath = route.path.replace(/^(\/guides\/)/, "");
+let home = "";
+let prevPage = "";
+let nextPage = "";
+const guidePath = useRoute().path.replace(/^(\/guides\/)/, "");
 
-// const list = props.frontmatter.list || "default";
+const list =
+  page.value.list === undefined ? "default" : String(page.value.list);
 
-// if (guideLists[list]) {
-//   home = guideLists[list].home;
-//   let found = false;
-//   for (const section of guideLists[list].pages) {
-//     for (const page of section.pages) {
-//       if (found && nextPage == "") {
-//         nextPage = page;
-//       }
-//       if (!found && page !== guidePath) {
-//         prevPage = page;
-//       }
-//       if (page === guidePath) {
-//         found = true;
-//       }
-//     }
-//   }
-// }
+if (guideLists[list]) {
+  home = guideLists[list].home;
+  let found = false;
+  for (const section of guideLists[list].pages) {
+    for (const page of section.pages) {
+      if (found && nextPage === "") {
+        nextPage = page;
+      }
+      if (!found && page !== guidePath) {
+        prevPage = page;
+      }
+      if (page === guidePath) {
+        found = true;
+      }
+    }
+  }
+}
 </script>
 
 <style>
@@ -143,13 +155,19 @@ const nextPage = "";
 .author-link {
   @apply relative top-2.5 mx-2;
 }
+.guide-top-link {
+  @apply px-5 py-2 opacity-50;
+}
+a.guide-top-link {
+  @apply opacity-100;
+}
 .guide-content {
   font-size: 1.05em;
   @apply mb-12;
 
   h2 a,
   h3 a {
-    @apply text-current no-underline;
+    @apply text-current no-underline dark:text-current;
   }
   h2 {
     @apply mb-3 mt-10 text-2xl font-bold;
@@ -161,7 +179,7 @@ const nextPage = "";
     @apply mt-3;
   }
   a {
-    @apply text-blue-500 underline;
+    @apply text-blue-600 underline dark:text-blue-400;
   }
 }
 </style>

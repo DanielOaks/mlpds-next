@@ -9,8 +9,9 @@
         <img src="/logo.png" class="mr-3 h-8" alt="MLP Drawing School logo" />
         <span
           class="self-center whitespace-nowrap text-2xl font-semibold text-white"
-          >MLPDS</span
         >
+          MLPDS
+        </span>
       </nuxt-link>
       <div
         id="navbar-sticky"
@@ -20,27 +21,30 @@
           class="mt-4 flex flex-col rounded-lg border p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0"
         >
           <li>
-            <nuxt-link to="/guides/" class="header-link" aria-current="page"
-              >Guides</nuxt-link
-            >
+            <nuxt-link to="/guides/" class="header-link" aria-current="page">
+              Guides
+            </nuxt-link>
           </li>
           <li>
             <a
               href="https://www.reddit.com/r/MLPdrawingschool/wiki/biweekly"
               target="_blank"
               class="header-link"
-              >Challenges</a
             >
+              Challenges
+            </a>
           </li>
           <li>
-            <a href="/prompts" class="header-link">Prompt Generator</a>
+            <nuxt-link to="/prompts" class="header-link">
+              Prompt Generator
+            </nuxt-link>
           </li>
         </ul>
       </div>
       <div class="flex">
         <select
           v-model="colorMode.preference"
-          class="rounded-xl px-2 pb-2 pt-1 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
+          class="rounded-xl px-2 py-1.5 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
         >
           <option value="system">System</option>
           <option value="light">Light Mode</option>
