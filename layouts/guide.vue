@@ -149,6 +149,10 @@ if (guideLists[list]) {
 </script>
 
 <style>
+html,
+body {
+  @apply scroll-pt-32;
+}
 .author-name {
   @apply relative top-1.5 mx-2 text-2xl opacity-50;
 }
@@ -179,7 +183,24 @@ a.guide-top-link {
     @apply mt-3;
   }
   a {
-    @apply text-link-light dark:text-link-dark underline;
+    @apply text-link-light underline dark:text-link-dark;
+  }
+  hr {
+    @apply my-5 h-[1.5px] rounded-full border-none bg-primary-100 dark:bg-primary-800;
+    /* border-b-2 border-primary-100 bg-white dark:border-primary-800 */
+  }
+  ul,
+  ol {
+    @apply my-5 ml-4 list-outside;
+  }
+  ul {
+    @apply list-disc;
+  }
+  ol {
+    @apply list-decimal;
+  }
+  li + li {
+    @apply mt-3;
   }
 }
 </style>

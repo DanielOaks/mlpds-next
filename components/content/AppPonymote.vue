@@ -1,7 +1,13 @@
 <template>
-  <div :class="{ ponymote: true, floating: false, right: right }">
+  <div
+    :class="{
+      ponymote: true,
+      floating: $slots.default === undefined,
+      right: right,
+    }"
+  >
     <img :src="'/ponymotes/' + fix(mote) + '.png'" />
-    <span>
+    <span v-if="$slots.default !== undefined">
       <ContentSlot :use="$slots.default" unwrap="p" />
     </span>
   </div>
@@ -10,7 +16,6 @@
 <script setup lang="ts">
 defineProps({
   mote: String,
-  floating: Boolean,
   right: Boolean,
 });
 
