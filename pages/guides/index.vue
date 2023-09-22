@@ -1,0 +1,34 @@
+<template>
+  <nuxt-layout>
+    <div class="bg-secondary-100 dark:bg-secondary-300 flex w-full">
+      <img class="mx-auto max-h-60" src="/banner-1.jpg" />
+      <h1
+        class="absolute left-1/2 top-40 -translate-x-1/2 text-5xl font-bold text-white"
+        style="
+          text-shadow:
+            -1px 1px 2px #000,
+            1px 1px 2px #000,
+            1px -1px 0 #000,
+            -1px -1px 0 #000,
+            0 0 30px #fff;
+        "
+      >
+        Guides
+      </h1>
+    </div>
+
+    <guide-list list="default" :titles="true" />
+
+    <br /><br />
+
+    <guide-list list="chumpys" :titles="false" />
+
+    <br /><br /><br /><br />
+  </nuxt-layout>
+</template>
+
+<script setup lang="ts">
+useHead({
+  title: "Beginner Art Guides",
+});
+</script>

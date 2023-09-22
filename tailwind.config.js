@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+// // eslint-disable-next-line @typescript-eslint/no-var-requires
+// const defaultTheme = require("tailwindcss/defaultTheme");
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  darkMode: "class",
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -12,6 +13,7 @@ module.exports = {
     "./nuxt.config.{js,ts}",
     "./app.vue",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -43,6 +45,9 @@ module.exports = {
           950: "#191700",
         },
       },
+      // fontFamily: {
+      //   sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+      // },
     },
   },
   plugins: [],

@@ -1,21 +1,26 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    '@nuxt/content',
-    '@nuxtjs/color-mode',
-  ],
+  css: ["~/assets/css/main.css"],
+  modules: ["nuxt-svgo", "@pinia/nuxt", "@nuxtjs/color-mode", "@nuxt/content"],
   content: {
     documentDriven: true,
   },
-  css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
+      "tailwindcss/nesting": {},
       tailwindcss: {},
       autoprefixer: {},
     },
   },
   colorMode: {
-    classSuffix: ''
+    classSuffix: "",
   },
-})
+
+  runtimeConfig: {
+    // private, only available server-side
+
+    // public, exposed client-side
+    public: {},
+  },
+});

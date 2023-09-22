@@ -13,7 +13,7 @@ As people often hear from me critique is a conversation so I am going to approac
 
 ### For the Critiquer: Not enough time!
 
-You have a life and the sub isn't all of it. This is why I'm trying to create all the guides. So that the same problem that comes up in artist after artist can be more easily addressed with a simple link instead of a redundant long and hard to make comment. <Ponymote mote="ajhappy" text="and we need more critics in general."/> I encourage everyone to write their own and suggest improvements on and points that need expansion to the guides. We're trying to build a nice self sustaining school and for that we definitely need to ease the burden on critics. A guide gives you quotes to pull from, links to make and the beginning of the conversation. You can always tailor your critique to suit the artist, but a guide makes a good undersketch.
+You have a life and the sub isn't all of it. This is why I'm trying to create all the guides. So that the same problem that comes up in artist after artist can be more easily addressed with a simple link instead of a redundant long and hard to make comment. <AppPonymote mote="ajhappy" text="and we need more critics in general."/> I encourage everyone to write their own and suggest improvements on and points that need expansion to the guides. We're trying to build a nice self sustaining school and for that we definitely need to ease the burden on critics. A guide gives you quotes to pull from, links to make and the beginning of the conversation. You can always tailor your critique to suit the artist, but a guide makes a good undersketch.
 
 ### For the Artist: No one is critiquing my work!
 
@@ -25,7 +25,7 @@ However it goes a bit deeper for the artist. It is your responsibility to come t
 
 ### For the Critiquer: Another new person needs to learn the culture of the MLPDS...
 
-This is supposed to happen. New people aren't magic. <Ponymote mote="twismile" text="We need more magic in the sub."/> Now we have a <router-link to="/guides/sub-etiquette">brand new guide here to introduce new peoples to the sub</router-link>.
+This is supposed to happen. New people aren't magic. <AppPonymote mote="twismile" text="We need more magic in the sub."/> Now we have a <router-link to="/guides/sub-etiquette">brand new guide here to introduce new peoples to the sub</router-link>.
 
 ### For the Artist: I'm brand new, what's going on?
 
@@ -74,5 +74,5 @@ Art doesn't end. There is always more to learn and always a way to improve. Try 
 ## Conclusion
 
 If you have more problems let me know and I'll be sure and update the guide!
-<Ponymote mote="twiquery" text="This didn't really turn out how I intended it... darn."/>
-<Ponymote mote="twistare" text="Now I have another critique guide to make."/>
+<AppPonymote mote="twiquery" text="This didn't really turn out how I intended it... darn."/>
+<AppPonymote mote="twistare" text="Now I have another critique guide to make."/>

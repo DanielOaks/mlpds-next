@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="sticky left-0 top-0 z-20 w-full bg-primary-500 dark:bg-primary-600"
+    class="bg-primary-500 dark:bg-primary-600 sticky left-0 top-0 z-20 w-full"
   >
     <div
       class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
@@ -22,7 +22,7 @@
           <li>
             <a
               href="/guides/"
-              class="block rounded py-2 pl-3 pr-4 text-primary-100 md:bg-transparent md:p-0"
+              class="text-primary-100 block rounded py-2 pl-3 pr-4 md:bg-transparent md:p-0"
               aria-current="page"
               >Guides</a
             >

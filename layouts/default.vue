@@ -27,9 +27,8 @@
     </Head>
 
     <Body class="bg-white text-black dark:bg-zinc-900 dark:text-white">
-      <AppHeader />
+      <TheHeader />
       <slot />
-      <AppFooter />
     </Body>
   </div>
 </template>
