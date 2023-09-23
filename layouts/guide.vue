@@ -170,7 +170,8 @@ a.guide-top-link {
   @apply mb-12;
 
   h2 a,
-  h3 a {
+  h3 a,
+  h4 a {
     @apply text-current no-underline dark:text-current;
   }
   h2 {
@@ -179,6 +180,9 @@ a.guide-top-link {
   h3 {
     @apply mb-1 mt-5 text-xl font-bold;
   }
+  h4 {
+    @apply mb-1 mt-4 text-lg font-bold;
+  }
   p + p {
     @apply mt-3;
   }
@@ -186,8 +190,7 @@ a.guide-top-link {
     @apply text-link-light underline dark:text-link-dark;
   }
   hr {
-    @apply my-5 h-[1.5px] rounded-full border-none bg-primary-100 dark:bg-primary-800;
-    /* border-b-2 border-primary-100 bg-white dark:border-primary-800 */
+    @apply my-5 h-[2px] rounded-full border-none bg-primary-100 dark:bg-primary-800;
   }
   ul,
   ol {
