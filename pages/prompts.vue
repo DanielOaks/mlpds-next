@@ -84,7 +84,7 @@
         <div
           v-for="(char, i) in resultChars"
           :key="i"
-          class="flex flex-col items-center rounded-xl bg-secondary-100 px-2 py-2 text-center"
+          class="flex flex-col items-center rounded-xl bg-secondary-100 px-2 py-2 text-center dark:bg-secondary-900"
         >
           <div class="flex h-52 w-52 items-center justify-center">
             <img
