@@ -73,7 +73,7 @@
         </hgroup>
         <div
           v-if="prevPage || home || nextPage"
-          class="sticky top-16 mb-4 mt-1 flex justify-center gap-3 border-b-2 border-primary-100 bg-white dark:border-primary-800 dark:bg-zinc-900"
+          class="sticky top-16 z-10 mb-4 mt-1 flex justify-center gap-3 border-b-2 border-primary-100 bg-white dark:border-primary-800 dark:bg-zinc-900"
         >
           <nuxt-link
             v-if="prevPage"
@@ -204,6 +204,9 @@ a.guide-top-link {
   }
   li + li {
     @apply mt-3;
+  }
+  blockquote {
+    @apply my-3 rounded border-l-4 border-primary-200 py-1 pl-4 dark:border-primary-700;
   }
 }
 </style>

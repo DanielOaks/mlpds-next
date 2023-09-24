@@ -2,7 +2,7 @@
   <div
     :class="{
       ponymote: true,
-      floating: $slots.default === undefined,
+      floating: $slots.default === undefined && space === false,
       right: right,
     }"
   >
@@ -17,12 +17,14 @@
 defineProps({
   mote: String,
   right: Boolean,
+  space: Boolean,
 });
 
 const fixedMotes: { [key: string]: string } = {
   a00: "ajlie",
   a03: "ajhappy",
   a05: "ajsup",
+  a27: "scootaplease",
   b01: "ajcower",
   b05: "ajugh",
   b07: "ajwut",
@@ -30,11 +32,14 @@ const fixedMotes: { [key: string]: string } = {
   b39: "ppseesyou",
   c02: "ohhi",
   c04: "ajfrown",
+  c05: "raritysad",
   c14: "hmmm",
+  c17: "loveme",
   c23: "derpyhappy",
   c28: "angel",
   e07: "ajconfused",
   e25: "rdsalute",
+  e26: "cheerilee",
   rb11: "ajsly",
 };
 

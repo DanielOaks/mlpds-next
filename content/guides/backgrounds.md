@@ -17,7 +17,7 @@ Backgrounds add depth and space to a picture. They can be used to draw your eye 
 
 There are a few simple tips to keep in mind to make painting landscapes not seem too daunting. On the surface it seems like a lot of work but it's really not so hard.
 
-::app-ponymote{mote="c02" :right="true"}
+::app-ponymote{mote="c02" right}
 It's easy if you know how
 ::
 ::app-ponymote{mote="b39"}

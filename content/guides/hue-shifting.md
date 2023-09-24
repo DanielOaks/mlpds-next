@@ -132,11 +132,11 @@ In this section we'll have a few lights and example objects. The hue shifts here
 
 #### Yellow Light
 
-:app-colour-wheel{:small="true"}
+:app-colour-wheel{small}
 
-This is the colour of our light source: :app-hsv{:h="60" :big="true"}
+This is the colour of our light source: :app-hsv{:h="60" big}
 
-So the shadows for this light source would be: :app-hsv{:h="240" :big="true"}
+So the shadows for this light source would be: :app-hsv{:h="240" big}
 
 ---
 
@@ -146,11 +146,11 @@ This could be a wall, a sphere, a cube, or a pony's coat! If we look at our colo
 
 Compare:
 
-Shadow :app-hsv{:h="-32" v="30%"} :app-hsv{:h="-26" v="39%"} :app-hsv{:h="-16" v="42%"} :app-hsv{:h="0" :big="true"} :app-hsv{:h="15" v="55%"} :app-hsv{:h="23" v="60%"} Light – with hue shifting
+Shadow :app-hsv{:h="-32" v="30%"} :app-hsv{:h="-26" v="39%"} :app-hsv{:h="-16" v="42%"} :app-hsv{:h="0" big} :app-hsv{:h="15" v="55%"} :app-hsv{:h="23" v="60%"} Light – with hue shifting
 
 vs
 
-Shadow :app-hsv{:h="0" v="30%"} :app-hsv{:h="0" v="39%"} :app-hsv{:h="0" v="42%"} :app-hsv{:h="0" :big="true"} :app-hsv{:h="0" v="60%"} :app-hsv{:h="0" v="70%"} Light – no hue shifting
+Shadow :app-hsv{:h="0" v="30%"} :app-hsv{:h="0" v="39%"} :app-hsv{:h="0" v="42%"} :app-hsv{:h="0" big} :app-hsv{:h="0" v="60%"} :app-hsv{:h="0" v="70%"} Light – no hue shifting
 
 The effect is subtle, but noticable when applied across your scene. Your shadows and lit areas end up looking **much** more dynamic, interesting, and natural. It also helps it feel like your light source is actually interacting with your scene.
 
@@ -160,11 +160,11 @@ Let's say we have an aqua object: :app-hsv{:h="170"}
 
 If we look at our colour wheel, the lit areas will tint towards yellow/green and the shadow areas will tint towards blue.
 
-Shadow :app-hsv{:h="198" v="45%"} :app-hsv{:h="186" v="46%"} :app-hsv{:h="180" v="47%"} :app-hsv{:h="170" :big="true"} :app-hsv{:h="150" v="70%"} :app-hsv{:h="130" v="80%"} Light – with hue shifting
+Shadow :app-hsv{:h="198" v="45%"} :app-hsv{:h="186" v="46%"} :app-hsv{:h="180" v="47%"} :app-hsv{:h="170" big} :app-hsv{:h="150" v="70%"} :app-hsv{:h="130" v="80%"} Light – with hue shifting
 
 vs
 
-Shadow :app-hsv{:h="170" v="33%"} :app-hsv{:h="170" v="40%"} :app-hsv{:h="170" v="45%"} :app-hsv{:h="170" :big="true"} :app-hsv{:h="170" v="70%"} :app-hsv{:h="170" v="80%"} Light – no hue shifting
+Shadow :app-hsv{:h="170" v="33%"} :app-hsv{:h="170" v="40%"} :app-hsv{:h="170" v="45%"} :app-hsv{:h="170" big} :app-hsv{:h="170" v="70%"} :app-hsv{:h="170" v="80%"} Light – no hue shifting
 
 ---
 
@@ -176,11 +176,11 @@ Here's an example scene painted up with this light source and some very subtle h
 
 #### Blue Light
 
-:app-colour-wheel{:small="true"}
+:app-colour-wheel{small}
 
-This is the colour of our light source: :app-hsv{:h="200" :big="true"}
+This is the colour of our light source: :app-hsv{:h="200" big}
 
-So the shadows for this light source would be: :app-hsv{:h="20" :big="true"}
+So the shadows for this light source would be: :app-hsv{:h="20" big}
 
 ---
 
@@ -188,11 +188,11 @@ Let's say we have a pink object: :app-hsv{:h="-30"}
 
 If we look at our colour wheel, the lit areas will tint towards purple and the shadow areas will tint towards red/orange.
 
-Shadow :app-hsv{:h="10" v="39%"} :app-hsv{:h="0" v="42%"} :app-hsv{:h="-15" v="45%"} :app-hsv{:h="-30" :big="true"} :app-hsv{:h="-45" v="60%"} :app-hsv{:h="-60" v="73%"} Light – with hue shifting
+Shadow :app-hsv{:h="10" v="39%"} :app-hsv{:h="0" v="42%"} :app-hsv{:h="-15" v="45%"} :app-hsv{:h="-30" big} :app-hsv{:h="-45" v="60%"} :app-hsv{:h="-60" v="73%"} Light – with hue shifting
 
 vs
 
-Shadow :app-hsv{:h="-30" v="39%"} :app-hsv{:h="-30" v="42%"} :app-hsv{:h="-30" v="45%"} :app-hsv{:h="-30" :big="true"} :app-hsv{:h="-30" v="60%"} :app-hsv{:h="-30" v="73%"} Light – no hue shifting
+Shadow :app-hsv{:h="-30" v="39%"} :app-hsv{:h="-30" v="42%"} :app-hsv{:h="-30" v="45%"} :app-hsv{:h="-30" big} :app-hsv{:h="-30" v="60%"} :app-hsv{:h="-30" v="73%"} Light – no hue shifting
 
 ---
 
@@ -200,11 +200,11 @@ Let's say we have a green object: :app-hsv{:h="100"}
 
 If we look at our colour wheel, the lit areas will tint towards aqua/blue and the shadow areas will tint towards yellow.
 
-Shadow :app-hsv{:h="70" v="32%"} :app-hsv{:h="80" v="40%"} :app-hsv{:h="90" v="44%"} :app-hsv{:h="100" :big="true"} :app-hsv{:h="130" v="72%"} :app-hsv{:h="155" v="75%"} Light – with hue shifting
+Shadow :app-hsv{:h="70" v="32%"} :app-hsv{:h="80" v="40%"} :app-hsv{:h="90" v="44%"} :app-hsv{:h="100" big} :app-hsv{:h="130" v="72%"} :app-hsv{:h="155" v="75%"} Light – with hue shifting
 
 vs
 
-Shadow :app-hsv{:h="100" v="32%"} :app-hsv{:h="100" v="40%"} :app-hsv{:h="100" v="44%"} :app-hsv{:h="100" :big="true"} :app-hsv{:h="100" v="72%"} :app-hsv{:h="100" v="85%"} Light – no hue shifting
+Shadow :app-hsv{:h="100" v="32%"} :app-hsv{:h="100" v="40%"} :app-hsv{:h="100" v="44%"} :app-hsv{:h="100" big} :app-hsv{:h="100" v="72%"} :app-hsv{:h="100" v="85%"} Light – no hue shifting
 
 ::app-ponymote{mote="raritydress"}
 And that's how you integrate the light source into your scene, darlings.

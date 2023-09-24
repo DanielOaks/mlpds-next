@@ -194,7 +194,7 @@ So how do we do this with wings? Rather than drawing the edges of the feathers, 
 
 ## Conclusion
 
-The best way to learn pony anatomy is to do a study. To do that, go over to <a :href="safePonyRefLink">here</a> or go watch the show and take screenshots, whatever, just go grab some show references and try to recreate them with this process.
+The best way to learn pony anatomy is to do a study. To do that, go over to [here](https://derpibooru.org/search?page=1&q=safe) or go watch the show and take screenshots, whatever, just go grab some show references and try to recreate them with this process.
 
 **However I should mention that just copying a reference isn't going to make you a good artist. Start out sticking close to the reference until you've figured out the pony anatomy, then it's time to start moving away from them (Don't get rid of them completely!) and create your own unique pony pictures and poses!**
 
