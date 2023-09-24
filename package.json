@@ -17,6 +17,7 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@tailwindcss/forms": "^0.5.6",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "autoprefixer": "^10.4.15",
@@ -42,6 +43,7 @@
     "chartjs-adapter-spacetime": "^1.0.1",
     "pinia": "^2.1.6",
     "spacetime": "^7.4.7",
-    "vue-chartjs": "^5.2.0"
+    "vue-chartjs": "^5.2.0",
+    "vue-multiselect": "^3.0.0-beta.2"
   }
 }
