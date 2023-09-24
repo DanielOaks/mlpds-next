@@ -44,7 +44,7 @@
       <div class="flex">
         <select
           v-model="colorMode.preference"
-          class="rounded-xl px-2 py-1.5 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
+          class="rounded-xl px-2 py-1.5 pr-8 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
         >
           <option value="system">System</option>
           <option value="light">Light Mode</option>
