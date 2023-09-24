@@ -1,6 +1,6 @@
 <template>
   <nuxt-layout>
-    <div class="mx-auto mt-12 max-w-screen-md">
+    <div class="mx-auto mt-12 max-w-screen-md px-4">
       <hgroup class="text-center">
         <h1 class="mb-2 text-4xl font-bold">Prompt generator</h1>
         <div class="text-xl opacity-80">
@@ -80,7 +80,7 @@
         value="Generate"
         @click="generate()"
       />
-      <div class="items-top my-6 flex justify-center gap-5">
+      <div class="items-top my-6 flex flex-wrap justify-center gap-5">
         <div
           v-for="(char, i) in resultChars"
           :key="i"

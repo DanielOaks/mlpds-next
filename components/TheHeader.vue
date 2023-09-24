@@ -17,7 +17,7 @@
       </nuxt-link>
       <div class="flex w-auto items-center justify-center">
         <ul
-          class="mx-4 flex flex-row flex-wrap items-center justify-center gap-4 rounded-lg border-0 font-medium"
+          class="mx-4 flex flex-row items-center justify-center gap-1 rounded-lg border-0 font-medium md:gap-4"
         >
           <li>
             <nuxt-link
@@ -27,7 +27,7 @@
               title="Drawing guides"
             >
               <div class="hidden md:block">Guides</div>
-              <div class="md:hidden">
+              <div class="px-3 py-1.5 md:hidden">
                 <font-awesome-icon :icon="['fa', 'book']" />
               </div>
             </nuxt-link>
@@ -40,7 +40,7 @@
               title="Drawing challanges"
             >
               <div class="hidden md:block">Challenges</div>
-              <div class="md:hidden">
+              <div class="px-3 py-1.5 md:hidden">
                 <font-awesome-icon :icon="['fa', 'hat-cowboy-side']" />
               </div>
             </a>
@@ -52,7 +52,7 @@
               title="Drawing prompt generator"
             >
               <div class="hidden md:block">Prompt Generator</div>
-              <div class="md:hidden">
+              <div class="px-3 py-1.5 md:hidden">
                 <font-awesome-icon :icon="['fa', 'dice']" />
               </div>
             </nuxt-link>
