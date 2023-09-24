@@ -109,7 +109,7 @@
           <span class="text-lg">{{ location.place }}</span>
         </div>
       </div>
-      <div class="mt-10 text-center text-sm">
+      <div class="mt-10 text-center text-sm opacity-90">
         Includes content from
         <a
           class="text-link-light dark:text-link-dark"

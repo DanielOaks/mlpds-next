@@ -2,7 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  modules: ["nuxt-svgo", "@pinia/nuxt", "@nuxtjs/color-mode", "@nuxt/content"],
+  modules: [
+    "nuxt-svgo",
+    "@pinia/nuxt",
+    "@nuxtjs/color-mode",
+    "@nuxt/content",
+    "@formkit/nuxt",
+  ],
   content: {
     documentDriven: true,
   },
@@ -21,6 +27,9 @@ export default defineNuxtConfig({
     // private, only available server-side
 
     // public, exposed client-side
-    public: {},
+    public: {
+      // base values
+      finelineSubmitUrl: "",
+    },
   },
 });

@@ -5,20 +5,27 @@
       Fineline is our community's mascot. Look at her go!
     </span>
     <div class="mt-4 flex gap-4">
-      <a
+      <div
         v-for="(image, i) in finelineImages"
         :key="i"
-        :href="image.img"
-        class="block rounded-2xl border-2 border-solid border-secondary-400 px-1 py-2 shadow-lg dark:border-secondary-700"
+        class="rounded-2xl border-2 border-solid border-secondary-400 px-1 py-2 shadow-lg dark:border-secondary-700"
       >
-        <div
+        <a
+          :href="image.img"
           class="flex h-80 w-80 items-center justify-center overflow-hidden rounded bg-white"
         >
           <img class="max-h-full max-w-full" :src="image.img" />
-        </div>
-        <div class="block pt-2 text-center">@{{ image.twitter }}</div>
-      </a>
+        </a>
+        <a
+          :href="`https://twitter.com/${image.twitter}`"
+          target="_blank"
+          class="block pt-2 text-center"
+        >
+          @{{ image.twitter }}
+        </a>
+      </div>
     </div>
+    <FinelineGallerySubmit />
   </div>
 </template>
 
@@ -33,5 +40,6 @@ const finelineImages = [
     twitter: "terminal_vex",
   },
 ];
-console.log(finelineImages);
 </script>
+
+<style></style>
