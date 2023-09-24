@@ -8,4 +8,11 @@
 useHead({
   title: "Drawing prompt generator",
 });
+
+definePageMeta({
+  documentDriven: {
+    page: false,
+    surround: false,
+  },
+});
 </script>

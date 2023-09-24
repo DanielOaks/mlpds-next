@@ -31,4 +31,11 @@
 useHead({
   title: "Beginner Art Guides",
 });
+
+definePageMeta({
+  documentDriven: {
+    page: false,
+    surround: false,
+  },
+});
 </script>

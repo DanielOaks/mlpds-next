@@ -35,4 +35,11 @@
 useHead({
   title: "",
 });
+
+definePageMeta({
+  documentDriven: {
+    page: false,
+    surround: false,
+  },
+});
 </script>
