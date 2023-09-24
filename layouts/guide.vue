@@ -28,82 +28,96 @@
 
     <Body class="bg-white text-black dark:bg-zinc-900 dark:text-white">
       <TheHeader />
-      <div class="mx-auto mt-5 max-w-screen-md">
-        <div class="mx-4 flex flex-wrap items-center">
-          <hgroup>
-            <h1 class="text-3xl font-bold" v-text="title" />
-            <div v-if="subtitle" class="text-xl opacity-70" v-text="subtitle" />
-          </hgroup>
-          <div class="flex content-center items-center">
-            <div v-if="author === undefined" class="ml-4 inline-block">
-              <span class="author-name" v-text="authorKey" />
-            </div>
-            <div v-if="author !== undefined" class="ml-4 flex items-center">
-              <img
-                v-if="author.icon"
-                class="h-12 rounded-full"
-                :src="author.icon"
+      <div class="mt-5 flex justify-center">
+        <div class="max-w-screen-md">
+          <div class="mx-4 flex flex-wrap items-center">
+            <hgroup>
+              <h1 class="text-3xl font-bold" v-text="title" />
+              <div
+                v-if="subtitle"
+                class="text-xl opacity-70"
+                v-text="subtitle"
               />
-              <span class="author-name" v-text="author.name" />
-              <a
-                v-if="author.youtube"
-                class="author-link text-2xl text-[#ff0000]"
-                :href="author.youtube"
-                title="Author's YouTube"
-              >
-                <font-awesome-icon :icon="['fab', 'youtube']" />
-              </a>
-              <a
-                v-if="author.twitter"
-                class="author-link text-2xl text-[#1da1f2]"
-                :href="`https://twitter.com/${author.twitter}`"
-                title="Author's Twitter"
-              >
-                <font-awesome-icon :icon="['fab', 'twitter']" />
-              </a>
-              <a
-                v-if="author.reddit"
-                class="author-link text-2xl text-[#ff5700]"
-                :href="`https://reddit.com/u/${author.reddit}`"
-                title="Author's Reddit"
-              >
-                <font-awesome-icon :icon="['fab', 'reddit']" />
-              </a>
-              <a
-                v-if="author.homepage"
-                class="author-link text-2xl text-link-light dark:text-link-dark"
-                :href="author.homepage"
-                title="Author's Homepage"
-              >
-                <font-awesome-icon :icon="['fa', 'link']" />
-              </a>
+            </hgroup>
+            <div class="flex content-center items-center">
+              <div v-if="author === undefined" class="ml-4 inline-block">
+                <span class="author-name" v-text="authorKey" />
+              </div>
+              <div v-if="author !== undefined" class="ml-4 flex items-center">
+                <img
+                  v-if="author.icon"
+                  class="h-12 rounded-full"
+                  :src="author.icon"
+                />
+                <span class="author-name" v-text="author.name" />
+                <a
+                  v-if="author.youtube"
+                  class="author-link text-2xl text-[#ff0000]"
+                  :href="author.youtube"
+                  title="Author's YouTube"
+                >
+                  <font-awesome-icon :icon="['fab', 'youtube']" />
+                </a>
+                <a
+                  v-if="author.twitter"
+                  class="author-link text-2xl text-[#1da1f2]"
+                  :href="`https://twitter.com/${author.twitter}`"
+                  title="Author's Twitter"
+                >
+                  <font-awesome-icon :icon="['fab', 'twitter']" />
+                </a>
+                <a
+                  v-if="author.reddit"
+                  class="author-link text-2xl text-[#ff5700]"
+                  :href="`https://reddit.com/u/${author.reddit}`"
+                  title="Author's Reddit"
+                >
+                  <font-awesome-icon :icon="['fab', 'reddit']" />
+                </a>
+                <a
+                  v-if="author.homepage"
+                  class="author-link text-2xl text-link-light dark:text-link-dark"
+                  :href="author.homepage"
+                  title="Author's Homepage"
+                >
+                  <font-awesome-icon :icon="['fa', 'link']" />
+                </a>
+              </div>
             </div>
+          </div>
+          <div
+            v-if="prevPage || home || nextPage"
+            class="sticky top-16 z-10 mx-5 mb-4 flex justify-center gap-3 border-b-2 border-primary-100 bg-white pt-1 dark:border-primary-800 dark:bg-zinc-900"
+          >
+            <nuxt-link
+              v-if="prevPage"
+              class="guide-top-link"
+              :to="guidesPrefix + prevPage"
+              >Previous Guide</nuxt-link
+            >
+            <span v-if="!prevPage" class="guide-top-link">Previous Guide</span>
+            <nuxt-link class="guide-top-link" :to="guidesPrefix + home"
+              >Home</nuxt-link
+            >
+            <nuxt-link
+              v-if="nextPage"
+              class="guide-top-link"
+              :to="guidesPrefix + nextPage"
+              >Next Guide</nuxt-link
+            >
+            <span v-if="!nextPage" class="guide-top-link">Next Guide</span>
+          </div>
+          <div class="guide-content mx-5">
+            <slot />
           </div>
         </div>
         <div
-          v-if="prevPage || home || nextPage"
-          class="sticky top-16 z-10 mx-5 mb-4 flex justify-center gap-3 border-b-2 border-primary-100 bg-white pt-1 dark:border-primary-800 dark:bg-zinc-900"
+          :class="{
+            'hidden w-40': true,
+            'lg:block': false && nopagenav !== true,
+          }"
         >
-          <nuxt-link
-            v-if="prevPage"
-            class="guide-top-link"
-            :to="guidesPrefix + prevPage"
-            >Previous Guide</nuxt-link
-          >
-          <span v-if="!prevPage" class="guide-top-link">Previous Guide</span>
-          <nuxt-link class="guide-top-link" :to="guidesPrefix + home"
-            >Home</nuxt-link
-          >
-          <nuxt-link
-            v-if="nextPage"
-            class="guide-top-link"
-            :to="guidesPrefix + nextPage"
-            >Next Guide</nuxt-link
-          >
-          <span v-if="!nextPage" class="guide-top-link">Next Guide</span>
-        </div>
-        <div class="guide-content mx-5">
-          <slot />
+          <div class="sticky top-24 text-sm">test</div>
         </div>
       </div>
     </Body>
@@ -125,7 +139,7 @@ useHead({
 
 const { page } = useContent();
 
-const { title, author: authorKey, subtitle } = page.value;
+const { title, author: authorKey, subtitle, nopagenav } = page.value;
 const author = authors[authorKey];
 
 // get this guide's path
