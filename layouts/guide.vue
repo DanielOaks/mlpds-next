@@ -82,7 +82,7 @@
         </div>
         <div
           v-if="prevPage || home || nextPage"
-          class="sticky top-16 z-10 mx-5 mb-4 mt-1 flex justify-center gap-3 border-b-2 border-primary-100 bg-white dark:border-primary-800 dark:bg-zinc-900"
+          class="sticky top-16 z-10 mx-5 mb-4 flex justify-center gap-3 border-b-2 border-primary-100 bg-white pt-1 dark:border-primary-800 dark:bg-zinc-900"
         >
           <nuxt-link
             v-if="prevPage"
