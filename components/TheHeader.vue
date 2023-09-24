@@ -59,16 +59,31 @@
           </li>
         </ul>
       </div>
-      <div class="flex">
-        <select
-          v-model="colorMode.preference"
-          class="rounded-xl px-2 py-1.5 pr-8 dark:border-gray-700 dark:bg-gray-900 dark:text-white"
-        >
-          <option value="system">System</option>
-          <option value="light">Light Mode</option>
-          <option value="dark">Dark Mode</option>
-        </select>
-      </div>
+      <select
+        v-model="colorMode.preference"
+        class="hidden rounded-xl px-2 py-1.5 pr-8 dark:border-gray-700 dark:bg-gray-900 dark:text-white sm:block"
+      >
+        <option value="system">System</option>
+        <option value="light">Light Mode</option>
+        <option value="dark">Dark Mode</option>
+      </select>
+      <a href="#" class="block py-1 pl-3 text-lg text-white sm:hidden">
+        <font-awesome-icon
+          v-if="colorMode.preference === 'system'"
+          :icon="['fa', 'desktop']"
+          @click="colorMode.preference = 'light'"
+        />
+        <font-awesome-icon
+          v-if="colorMode.preference === 'light'"
+          :icon="['fa', 'sun']"
+          @click="colorMode.preference = 'dark'"
+        />
+        <font-awesome-icon
+          v-if="colorMode.preference === 'dark'"
+          :icon="['fa', 'moon']"
+          @click="colorMode.preference = 'system'"
+        />
+      </a>
     </div>
   </nav>
 </template>
