@@ -29,51 +29,60 @@
     <Body class="bg-white text-black dark:bg-zinc-900 dark:text-white">
       <TheHeader />
       <div class="mx-auto mt-5 max-w-screen-md">
-        <hgroup>
-          <div class="mt-8 flex content-center items-center">
+        <div class="mx-4 flex flex-wrap items-center">
+          <hgroup>
             <h1 class="text-3xl font-bold" v-text="title" />
-
+            <div v-if="subtitle" class="text-xl opacity-70" v-text="subtitle" />
+          </hgroup>
+          <div class="flex content-center items-center">
             <div v-if="author === undefined" class="ml-4 inline-block">
               <span class="author-name" v-text="authorKey" />
             </div>
             <div v-if="author !== undefined" class="ml-4 flex items-center">
               <img
                 v-if="author.icon"
-                class="h-14 rounded-full"
+                class="h-12 rounded-full"
                 :src="author.icon"
               />
               <span class="author-name" v-text="author.name" />
               <a
                 v-if="author.youtube"
-                class="author-link"
+                class="author-link text-2xl text-[#ff0000]"
                 :href="author.youtube"
-                ><span color="#FF0000">YouTube</span></a
+                title="Author's YouTube"
               >
+                <font-awesome-icon :icon="['fab', 'youtube']" />
+              </a>
               <a
                 v-if="author.twitter"
-                class="author-link"
+                class="author-link text-2xl text-[#1da1f2]"
                 :href="`https://twitter.com/${author.twitter}`"
-                ><span color="#1DA1F2">Twitter</span></a
+                title="Author's Twitter"
               >
+                <font-awesome-icon :icon="['fab', 'twitter']" />
+              </a>
               <a
                 v-if="author.reddit"
-                class="author-link"
+                class="author-link text-2xl text-[#ff5700]"
                 :href="`https://reddit.com/u/${author.reddit}`"
-                ><span color="#FF5700">Reddit</span></a
+                title="Author's Reddit"
               >
+                <font-awesome-icon :icon="['fab', 'reddit']" />
+              </a>
               <a
                 v-if="author.homepage"
-                class="author-link"
+                class="author-link text-2xl text-link-light dark:text-link-dark"
                 :href="author.homepage"
-                ><span color="indigo">Link</span></a
+                title="Author's Homepage"
               >
+                <font-awesome-icon :icon="['fa', 'link']" />
+              </a>
             </div>
           </div>
-          <div v-if="subtitle" class="text-xl opacity-70" v-text="subtitle" />
-        </hgroup>
+        </div>
         <div
           v-if="prevPage || home || nextPage"
-          class="sticky top-16 z-10 mb-4 mt-1 flex justify-center gap-3 border-b-2 border-primary-100 bg-white dark:border-primary-800 dark:bg-zinc-900"
+          class="sticky top-16 z-10 mx-5 mb-4 mt-1 flex justify-center gap-3 border-b-2 border-primary-100 bg-white dark:border-primary-800 dark:bg-zinc-900"
         >
           <nuxt-link
             v-if="prevPage"
@@ -93,7 +102,7 @@
           >
           <span v-if="!nextPage" class="guide-top-link">Next Guide</span>
         </div>
-        <div class="guide-content">
+        <div class="guide-content mx-5">
           <slot />
         </div>
       </div>
@@ -154,7 +163,7 @@ body {
   @apply scroll-pt-32;
 }
 .author-name {
-  @apply relative top-1.5 mx-2 text-2xl opacity-50;
+  @apply relative top-1.5 mx-2 text-xl opacity-50;
 }
 .author-link {
   @apply relative top-2.5 mx-2;

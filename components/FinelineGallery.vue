@@ -1,10 +1,10 @@
 <template>
   <div class="mx-auto mt-10 flex max-w-screen-md flex-col items-center">
     <h2 class="text-2xl font-bold">Fineline</h2>
-    <span class="text-lg">
+    <span class="mx-4 text-lg">
       Fineline is our community's mascot. Look at her go!
     </span>
-    <div class="mt-4 flex gap-4">
+    <div class="mx-4 mt-4 flex flex-wrap justify-center gap-4">
       <div
         v-for="(image, i) in finelineImages"
         :key="i"
@@ -12,7 +12,7 @@
       >
         <a
           :href="image.img"
-          class="flex h-80 w-80 items-center justify-center overflow-hidden rounded bg-white"
+          class="flex h-80 w-80 max-w-[75vw] items-center justify-center overflow-hidden rounded bg-white"
         >
           <img class="max-h-full max-w-full" :src="image.img" />
         </a>
