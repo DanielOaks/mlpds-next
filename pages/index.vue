@@ -59,7 +59,12 @@ const icons = [
   {
     month: 6,
     day: 1,
-    src: "/icons/06-01-summer-len.png",
+    src: "/icons/06-01-pride-cpc.png",
+  },
+  {
+    month: 7,
+    day: 1,
+    src: "/icons/07-01-summer-len.png",
   },
   {
     month: 9,
