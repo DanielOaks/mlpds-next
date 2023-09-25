@@ -2,14 +2,14 @@
   <nuxt-layout>
     <TheHeadTags :title="metaTitle" :desc="metaDesc" :image="metaImage" />
 
-    <div class="mx-auto mt-12 max-w-screen-md px-4">
+    <div class="mx-auto mt-12 max-w-screen-lg px-4">
       <hgroup class="text-center">
         <h1 class="mb-2 text-4xl font-bold">Prompt generator</h1>
         <div class="text-xl opacity-80">
           Need something to draw? Click below!
         </div>
       </hgroup>
-      <div class="my-5 flex gap-16">
+      <div class="my-5 flex flex-wrap gap-x-16 gap-y-2">
         <div class="flex items-center gap-2">
           <input
             id="requireImages"
@@ -51,7 +51,7 @@
           "
         />
       </div>
-      <div class="my-5 flex gap-16">
+      <div class="my-5 flex flex-wrap gap-x-16 gap-y-2">
         <div class="flex items-center gap-2">
           <input
             id="gen4"
