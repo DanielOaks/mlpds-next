@@ -15,6 +15,18 @@ There's a Discord server, a subreddit for critique, and this site which has all 
 
 ---
 
+## Getting started
+
+So you're getting started with the community?
+
+- [Our YouTube channel](https://www.youtube.com/channel/UCgwjWwwYwrgnNZX6VegUMWQ) has a whole lot of critique livestreams, all still useful today.
+- [Our Subreddit](https://www.reddit.com/r/MLPdrawingschool/) is a great place to get feedback on your artwork.
+- [Our Discord](https://discord.gg/PhtDzZwbBR) has a bunch of other artists to chat and hang out with and more!
+
+---
+
+If you're just getting started with art then we have a whole set of tutorials that can help out. See our [Guides section](/guides/) for advice from many different pony artists, and [Challenges](https://www.reddit.com/r/MLPdrawingschool/wiki/biweekly) that force you to stretch your artistic muscles.
+
 ## Some history
 
 We've been around a fair while, going from Reddit and IRC to Discord.

@@ -57,6 +57,14 @@
               </div>
             </nuxt-link>
           </li>
+          <li>
+            <nuxt-link to="/about" class="header-link" title="About the MLPDS">
+              <div class="hidden md:block">About</div>
+              <div class="px-3 py-1.5 md:hidden">
+                <font-awesome-icon :icon="['fa', 'circle-info']" />
+              </div>
+            </nuxt-link>
+          </li>
         </ul>
       </div>
       <select
