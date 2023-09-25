@@ -12,6 +12,7 @@
       >
         <a
           :href="image.img"
+          target="_blank"
           class="flex h-80 w-80 max-w-[75vw] items-center justify-center overflow-hidden rounded bg-white"
         >
           <img class="max-h-full max-w-full" :src="image.img" />
