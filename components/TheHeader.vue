@@ -67,22 +67,12 @@
         <option value="light">Light Mode</option>
         <option value="dark">Dark Mode</option>
       </select>
-      <a href="#" class="block py-1 pl-3 text-lg text-white sm:hidden">
-        <font-awesome-icon
-          v-if="colorMode.preference === 'system'"
-          :icon="['fa', 'desktop']"
-          @click="colorMode.preference = 'light'"
-        />
-        <font-awesome-icon
-          v-if="colorMode.preference === 'light'"
-          :icon="['fa', 'sun']"
-          @click="colorMode.preference = 'dark'"
-        />
-        <font-awesome-icon
-          v-if="colorMode.preference === 'dark'"
-          :icon="['fa', 'moon']"
-          @click="colorMode.preference = 'system'"
-        />
+      <a
+        href="#"
+        class="block py-1 pl-3 text-lg text-white sm:hidden"
+        @click.prevent="nextColorMode()"
+      >
+        <font-awesome-icon :icon="['fa', faColorIcon]" />
       </a>
     </div>
   </nav>
@@ -90,6 +80,25 @@
 
 <script setup lang="ts">
 const colorMode = useColorMode();
+
+const faColorIcon = computed(() => {
+  if (colorMode.preference === "system") {
+    return "desktop";
+  } else if (colorMode.preference === "light") {
+    return "sun";
+  }
+  return "moon";
+});
+
+const nextColorModeMap = new Map<string, string>();
+nextColorModeMap.set("system", "light");
+nextColorModeMap.set("light", "dark");
+nextColorModeMap.set("dark", "system");
+
+function nextColorMode() {
+  const next = nextColorModeMap.get(colorMode.preference) || "light";
+  colorMode.preference = next;
+}
 </script>
 
 <style>
