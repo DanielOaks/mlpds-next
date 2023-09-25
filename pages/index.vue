@@ -2,9 +2,9 @@
   <nuxt-layout>
     <TheHeadTags :title="metaTitle" :desc="metaDesc" :image="metaImage" />
 
-    <div class="mb-10">
+    <div class="mb-20">
       <img
-        class="mx-auto mb-5 mt-8 w-40 max-w-full rounded-xl"
+        class="mx-auto mb-5 mt-12 w-40 max-w-full rounded-xl"
         :src="finelineImage"
       />
       <hgroup class="text-center">

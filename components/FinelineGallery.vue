@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto mt-8 flex max-w-screen-md flex-col items-center">
+  <div class="mx-auto mt-6 flex max-w-screen-md flex-col items-center">
     <h2 class="text-2xl font-bold">Fineline</h2>
     <span class="mx-4 text-lg">
       Fineline is our community's mascot. Look at her go!
