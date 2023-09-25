@@ -7,8 +7,6 @@ nopagenav: true
 
 There are three key steps to success in art and they are as follows:
 
-<br>
-
 1. **Study** From getting feedback and critique, to [working through guides](http://redd.it/s8kxz) over and over again, to looking at what others do and how they approach their work. Asking questions is very important here. Knowledge doesn't only come from practice, but also from openly wondering and asking. Your critics are here to help you, take advantage.
 
 2. **Copy the masters** The [11th Bi-Weekly Challenge](http://www.reddit.com/r/MLPdrawingschool/comments/rk24r/11th_biweekly_challenge/) was designed for its usefulness and all those who have done it have testified in their massive leaps and bounds in improvement. This isn't just a one time activity, but rather something to do over and over. Who are the masters? Any artist that is really good. For pony artists some of my favorites include: [JohnJoseco](http://johnjoseco.deviantart.com/gallery/), [CrappyUnicorn](http://crappyunicorn.deviantart.com/gallery/), [ShadowSquirrel](http://kp-shadowsquirrel.deviantart.com/), [Purplekeckleon](http://purplekecleon.deviantart.com/gallery/?q=color#/d31xj5t) and many more. Any artist whom you think is too far ahead of you to reach. Reach for them. You will not succeed the first time. Nor the second. Nor the third. But upon each attempt you _will_ learn. A lot. ...and that's the point.

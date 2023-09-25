@@ -10,7 +10,8 @@ defineProps({
 
 <style>
 .colourChart {
-  @apply mx-auto my-6 h-96 w-96 max-w-full rounded-full border-4 border-white bg-blend-screen shadow-xl;
+  max-width: calc(100vw - 2em);
+  @apply mx-auto my-6 h-96 w-96 rounded-full border-4 border-white bg-blend-screen shadow-xl;
   background: radial-gradient(
       circle closest-side,
       hsl(0, 0%, 100%),
