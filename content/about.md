@@ -1,5 +1,6 @@
 ---
 title: About the MLPDS
+image: /welcome.png
 layout: simple
 ---
 
