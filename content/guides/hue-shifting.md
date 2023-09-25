@@ -2,6 +2,9 @@
 title: Hue Shifting
 subtitle: Making natural tones in lights and shadows
 author: pixienop
+description: |
+  This technique lets you make more natural tones in lit and shaded areas.
+image: /guide-resources/hobbular-hue-shifting.png
 layout: guide
 ---
 

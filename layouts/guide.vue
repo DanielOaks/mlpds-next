@@ -144,6 +144,7 @@ const {
   author: authorKey,
   subtitle,
   description,
+  image,
   nopagenav,
 } = page.value;
 const author = authors[authorKey];
@@ -158,7 +159,7 @@ useSeoMeta({
   description: desc,
   ogDescription: desc,
   ogTitle: `${title} - Drawing Guide`,
-  ogImage: "/preview.png",
+  ogImage: image || "/preview.png",
   twitterCard: "summary_large_image",
 });
 
