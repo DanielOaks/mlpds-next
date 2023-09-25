@@ -20,6 +20,14 @@
           class="mx-4 flex flex-row items-center justify-center gap-1 rounded-lg border-0 font-medium md:gap-4"
         >
           <li>
+            <nuxt-link to="/about" class="header-link" title="About the MLPDS">
+              <div class="hidden md:block">About</div>
+              <div class="px-3 py-1.5 md:hidden">
+                <font-awesome-icon :icon="['fa', 'circle-info']" />
+              </div>
+            </nuxt-link>
+          </li>
+          <li>
             <nuxt-link
               to="/guides/"
               class="header-link"
@@ -54,14 +62,6 @@
               <div class="hidden md:block">Prompt Generator</div>
               <div class="px-3 py-1.5 md:hidden">
                 <font-awesome-icon :icon="['fa', 'dice']" />
-              </div>
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link to="/about" class="header-link" title="About the MLPDS">
-              <div class="hidden md:block">About</div>
-              <div class="px-3 py-1.5 md:hidden">
-                <font-awesome-icon :icon="['fa', 'circle-info']" />
               </div>
             </nuxt-link>
           </li>
