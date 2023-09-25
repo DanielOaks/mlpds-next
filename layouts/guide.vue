@@ -139,8 +139,28 @@ useHead({
 
 const { page } = useContent();
 
-const { title, author: authorKey, subtitle, nopagenav } = page.value;
+const {
+  title,
+  author: authorKey,
+  subtitle,
+  description,
+  nopagenav,
+} = page.value;
 const author = authors[authorKey];
+
+let desc = "Find tips and tricks about how to draw here!";
+if (description) {
+  desc = description;
+} else if (subtitle) {
+  desc = subtitle;
+}
+useSeoMeta({
+  description: desc,
+  ogDescription: desc,
+  ogTitle: `${title} - Drawing Guide`,
+  ogImage: "/preview.png",
+  twitterCard: "summary_large_image",
+});
 
 // get this guide's path
 const guidesPrefix = "/guides/";

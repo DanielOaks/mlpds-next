@@ -28,8 +28,14 @@
 </template>
 
 <script setup lang="ts">
-useHead({
+const desc = "Here's a set of art guides to help you draw ponies!";
+useSeoMeta({
   title: "Beginner Art Guides",
+  description: desc,
+  ogDescription: desc,
+  ogTitle: "Beginner Art Guides - MLP Drawing School",
+  ogImage: "/preview.png",
+  twitterCard: "summary_large_image",
 });
 
 definePageMeta({

@@ -135,8 +135,14 @@ import "vue-multiselect/dist/vue-multiselect.css";
 import characters from "@/assets/characters.json";
 import locations from "@/assets/locations.json";
 
-useHead({
+const desc = "Need something to draw? Generate characters and a location!";
+useSeoMeta({
   title: "Drawing prompt generator",
+  description: desc,
+  ogDescription: desc,
+  ogTitle: "Drawing prompt generator - MLP Drawing School",
+  ogImage: "/preview.png",
+  twitterCard: "summary_large_image",
 });
 
 definePageMeta({
