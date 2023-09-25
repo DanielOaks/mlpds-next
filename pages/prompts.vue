@@ -1,5 +1,7 @@
 <template>
   <nuxt-layout>
+    <TheHeadTags :title="metaTitle" :desc="metaDesc" :image="metaImage" />
+
     <div class="mx-auto mt-12 max-w-screen-md px-4">
       <hgroup class="text-center">
         <h1 class="mb-2 text-4xl font-bold">Prompt generator</h1>
@@ -135,15 +137,9 @@ import "vue-multiselect/dist/vue-multiselect.css";
 import characters from "@/assets/characters.json";
 import locations from "@/assets/locations.json";
 
-const desc = "Need something to draw? Generate characters and a location!";
-useSeoMeta({
-  title: "Drawing prompt generator",
-  description: desc,
-  ogDescription: desc,
-  ogTitle: "Drawing prompt generator - MLP Drawing School",
-  ogImage: "/preview.png",
-  twitterCard: "summary_large_image",
-});
+const metaTitle = "Drawing prompt generator";
+const metaDesc = "Need something to draw? Generate characters and a location!";
+const metaImage = "/preview.png";
 
 definePageMeta({
   documentDriven: {

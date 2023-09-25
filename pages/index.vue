@@ -1,5 +1,7 @@
 <template>
   <nuxt-layout>
+    <TheHeadTags :title="metaTitle" :desc="metaDesc" :image="metaImage" />
+
     <div class="mb-10">
       <img
         class="mx-auto mb-5 mt-8 w-40 max-w-full rounded-xl"
@@ -112,15 +114,9 @@ if (today.getMonth() === 3 && today.getDate() < 3) {
   finelineImage.value = "/icons/april1st-bluey-cpc.jpg";
 }
 
-const desc = "We're a supportive and nurturing art community.";
-useSeoMeta({
-  title: "",
-  description: desc,
-  ogDescription: desc,
-  ogTitle: "MLP Drawing School",
-  ogImage: "/preview.png",
-  twitterCard: "summary_large_image",
-});
+const metaTitle = "MLP Drawing School";
+const metaDesc = "We're a supportive and nurturing art community.";
+const metaImage = "/preview.png";
 
 definePageMeta({
   documentDriven: {

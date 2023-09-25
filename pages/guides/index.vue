@@ -1,5 +1,7 @@
 <template>
   <nuxt-layout>
+    <TheHeadTags :title="metaTitle" :desc="metaDesc" :image="metaImage" />
+
     <div class="flex w-full bg-secondary-100 dark:bg-secondary-600">
       <img class="mx-auto max-h-60" src="/banner-1.jpg" />
       <h1
@@ -28,15 +30,9 @@
 </template>
 
 <script setup lang="ts">
-const desc = "Here's a set of art guides to help you draw ponies!";
-useSeoMeta({
-  title: "Beginner Art Guides",
-  description: desc,
-  ogDescription: desc,
-  ogTitle: "Beginner Art Guides - MLP Drawing School",
-  ogImage: "/preview.png",
-  twitterCard: "summary_large_image",
-});
+const metaTitle = "Art Guides - MLP Drawing School";
+const metaDesc = "Here's a set of art guides to help you draw ponies!";
+const metaImage = "/preview.png";
 
 definePageMeta({
   documentDriven: {

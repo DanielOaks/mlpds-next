@@ -1,30 +1,6 @@
 <template>
   <div>
-    <Head>
-      <Link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/apple-touch-icon.png"
-      />
-      <Link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/favicon-32x32.png"
-      />
-      <Link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/favicon-16x16.png"
-      />
-      <Link rel="manifest" href="/site.webmanifest" />
-      <Link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f3d97e" />
-      <Meta name="apple-mobile-web-app-title" content="MLPDS" />
-      <Meta name="application-name" content="MLPDS" />
-      <Meta name="msapplication-TileColor" content="#fce38d" />
-      <Meta name="theme-color" content="#fff8e0" />
-    </Head>
+    <TheHeadTags :title="metaTitle" :desc="metaDesc" :image="metaImage" />
 
     <Body class="bg-white text-black dark:bg-zinc-900 dark:text-white">
       <TheHeader />
@@ -129,14 +105,6 @@ import "@fontsource/roboto";
 import "@fontsource/roboto/700.css";
 import { authors, guideLists } from "@/guideData";
 
-useHead({
-  titleTemplate: (titleChunk) => {
-    return titleChunk
-      ? `${titleChunk} - MLP Drawing School`
-      : "MLP Drawing School";
-  },
-});
-
 const { page } = useContent();
 
 const {
@@ -147,21 +115,19 @@ const {
   image,
   nopagenav,
 } = page.value;
-const author = authors[authorKey];
 
-let desc = "Find tips and tricks about how to draw here!";
+// page meta info
+const metaTitle = title ? `${title} - Drawing Guide` : "MLPDS Drawing Guide";
+let metaDesc = "Find tips and tricks about how to draw here!";
 if (description) {
-  desc = description;
+  metaDesc = description;
 } else if (subtitle) {
-  desc = subtitle;
+  metaDesc = subtitle;
 }
-useSeoMeta({
-  description: desc,
-  ogDescription: desc,
-  ogTitle: `${title} - Drawing Guide`,
-  ogImage: image || "/preview.png",
-  twitterCard: "summary_large_image",
-});
+const metaImage = image || "/preview.png";
+
+// author info
+const author = authors[authorKey];
 
 // get this guide's path
 const guidesPrefix = "/guides/";
