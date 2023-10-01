@@ -3,39 +3,41 @@
     <TheHeadTags :title="metaTitle" :desc="metaDesc" :image="metaImage" />
 
     <div class="mb-20">
-      <img
-        class="mx-auto mb-5 mt-12 w-40 max-w-full rounded-xl"
-        :src="finelineImage"
-      />
-      <hgroup class="text-center">
-        <h1 class="mb-2 text-3xl font-bold">MLP Drawing School</h1>
-        <p class="text-xl">We're a supportive and nurturing art community.</p>
-      </hgroup>
-      <div class="mt-1 flex justify-center text-4xl">
-        <a
-          class="block px-2 py-2 text-[#ff5700]"
-          target="_blank"
-          title="MLPDS Reddit"
-          href="https://www.reddit.com/r/MLPdrawingschool/"
-        >
-          <font-awesome-icon :icon="['fab', 'reddit']" />
-        </a>
-        <a
-          class="block px-3 py-2 text-[#5865f2]"
-          target="_blank"
-          title="MLPDS Discord"
-          href="https://discord.gg/PhtDzZwbBR"
-        >
-          <font-awesome-icon :icon="['fab', 'discord']" />
-        </a>
-        <a
-          class="block px-2 py-2 text-[#ff0000]"
-          target="_blank"
-          title="MLPDS YouTube"
-          href="https://www.youtube.com/channel/UCgwjWwwYwrgnNZX6VegUMWQ"
-        >
-          <font-awesome-icon :icon="['fab', 'youtube']" />
-        </a>
+      <div class="px-4">
+        <img
+          class="mx-auto mb-5 mt-12 w-40 max-w-full rounded-xl"
+          :src="finelineImage"
+        />
+        <hgroup class="text-center">
+          <h1 class="mb-2 text-3xl font-bold">MLP Drawing School</h1>
+          <p class="text-xl">We're a supportive and nurturing art community.</p>
+        </hgroup>
+        <div class="mt-1 flex justify-center text-4xl">
+          <a
+            class="block px-2 py-2 text-[#ff5700]"
+            target="_blank"
+            title="MLPDS Reddit"
+            href="https://www.reddit.com/r/MLPdrawingschool/"
+          >
+            <font-awesome-icon :icon="['fab', 'reddit']" />
+          </a>
+          <a
+            class="block px-3 py-2 text-[#5865f2]"
+            target="_blank"
+            title="MLPDS Discord"
+            href="https://discord.gg/PhtDzZwbBR"
+          >
+            <font-awesome-icon :icon="['fab', 'discord']" />
+          </a>
+          <a
+            class="block px-2 py-2 text-[#ff0000]"
+            target="_blank"
+            title="MLPDS YouTube"
+            href="https://www.youtube.com/channel/UCgwjWwwYwrgnNZX6VegUMWQ"
+          >
+            <font-awesome-icon :icon="['fab', 'youtube']" />
+          </a>
+        </div>
       </div>
       <FinelineGallery />
     </div>
