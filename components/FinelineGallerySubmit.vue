@@ -42,7 +42,7 @@
           prefix-icon="tag"
           label="Your name"
           help="So we can credit you"
-          placeholder="Jolly Doe"
+          placeholder="Fine Line"
           validation="required|length:1"
           validation-visibility="live"
         />
