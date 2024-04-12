@@ -18,12 +18,16 @@
           <img class="max-h-full max-w-full" :src="image.img" />
         </a>
         <a
+          v-if="image.twitter"
           :href="`https://twitter.com/${image.twitter}`"
           target="_blank"
           class="block pt-2 text-center"
         >
           @{{ image.twitter }}
         </a>
+        <span v-if="image.name" class="block pt-2 text-center">
+          {{ image.name }}
+        </span>
       </div>
     </div>
     <FinelineGallerySubmit />
@@ -39,6 +43,10 @@ const finelineImages = [
   {
     img: "/fineline/vex-fineline-1.jpg",
     twitter: "terminal_vex",
+  },
+  {
+    img: "/fineline/dino-fineline-1.png",
+    name: "Strangersaurus",
   },
 ];
 </script>
