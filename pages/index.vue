@@ -58,6 +58,11 @@ const icons = [
   },
   {
     month: 2,
+    day: 11,
+    src: "/icons/02-14-valentines-ally.png",
+  },
+  {
+    month: 2,
     day: 16,
     src: "/icons/02-16-german-carnival-bfc.png",
   },
