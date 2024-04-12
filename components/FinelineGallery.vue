@@ -15,7 +15,7 @@
           target="_blank"
           class="flex h-80 w-80 max-w-[75vw] items-center justify-center overflow-hidden rounded bg-white"
         >
-          <img class="max-h-full max-w-full" :src="image.img" />
+          <img class="max-h-full max-w-full" :src="image.thumb" />
         </a>
         <a
           v-if="image.twitter"
@@ -38,14 +38,17 @@
 const finelineImages = [
   {
     img: "/fineline/fluffyxai-fineline-1.png",
+    thumb: "/fineline/fluffyxai-fineline-1-thumb.jpg",
     twitter: "FluffyXai",
   },
   {
     img: "/fineline/vex-fineline-1.jpg",
+    thumb: "/fineline/vex-fineline-1-thumb.jpg",
     twitter: "terminal_vex",
   },
   {
     img: "/fineline/dino-fineline-1.png",
+    thumb: "/fineline/dino-fineline-1-thumb.jpg",
     name: "Strangersaurus",
   },
 ];
